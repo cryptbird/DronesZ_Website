@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
     {
       icon: <Linkedin size={20} />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/dronez',
+      url: 'https://linkedin.com/company/DronesZ',
       color: '#0077b5'
     },
     {
       icon: <Instagram size={20} />,
       name: 'Instagram',
-      url: 'https://instagram.com/dronez_official',
+      url: 'https://instagram.com/DronesZ_official',
       color: '#e4405f'
     },
   ];
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           {/* Company Info */}
           <div className="footer-section">
-            <h3 className="footer-title">DroneZ</h3>
+            <h3 className="footer-title">DronesZ</h3>
             <p className="footer-description">
               Redefining Flight. Assembling the Future. Advanced aerial systems for consumers, 
               defense, and industry.
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <Mail size={16} />
-                <a href="mailto:info@dronez.com">info@dronez.com</a>
+                <a href="mailto:info@DronesZ.com">info@DronesZ.com</a>
               </div>
               <div className="contact-item">
                 <Phone size={16} />
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="contact-item">
                 <MapPin size={16} />
-                <span>DroneZ Headquarters, Tech Park, Bangalore, India</span>
+                <span>DronesZ Headquarters, Tech Park, Bangalore, India</span>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ const Footer: React.FC = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} DroneZ. All rights reserved.
+              © {currentYear} DronesZ. All rights reserved.
             </p>
             <div className="footer-bottom-links">
               <Link to="/privacy" className="footer-bottom-link">Privacy Policy</Link>

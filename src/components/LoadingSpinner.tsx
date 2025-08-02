@@ -11,7 +11,7 @@ const LoadingSpinner: React.FC = () => {
         <div className="rotor rotor-4"></div>
         <div className="center-hub"></div>
       </div>
-      <p className="loading-text">Initializing DroneZ Systems...</p>
+      <p className="loading-text">Initializing DronesZ Systems...</p>
     </div>
   );
 };

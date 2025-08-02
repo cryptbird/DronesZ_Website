@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin />,
       title: 'Address',
-      value: 'DroneZ Headquarters, Tech Park, Bangalore, India',
+      value: 'DronesZ Headquarters, Tech Park, Bangalore, India',
       link: '#'
     }
   ];
@@ -100,19 +100,19 @@ const Contact: React.FC = () => {
     {
       icon: <Linkedin />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/dronez',
+      url: 'https://linkedin.com/company/DronesZ',
       color: '#0077b5'
     },
     {
       icon: <Instagram />,
       name: 'Instagram',
-      url: 'https://instagram.com/dronez_official',
+      url: 'https://instagram.com/DronesZ_official',
       color: '#e4405f'
     },
     {
       icon: <Youtube />,
       name: 'YouTube',
-      url: 'https://youtube.com/@dronez',
+      url: 'https://youtube.com/@DronesZ',
       color: '#ff0000'
     }
   ];
@@ -303,7 +303,7 @@ Email: {{user_email}}
 Subject: {{subject}}
 Message: {{message}}
 
-This message was sent from the DroneZ website contact form.`}
+This message was sent from the DronesZ website contact form.`}
                 </code>
               </div>
             </div> */}
@@ -322,7 +322,7 @@ This message was sent from the DroneZ website contact form.`}
             <div className="map-placeholder">
               <MapPin size={48} />
               <p>Interactive Map Coming Soon</p>
-              <p>DroneZ Headquarters, Tech Park, Bangalore, India</p>
+              <p>DronesZ Headquarters, Tech Park, Bangalore, India</p>
             </div>
           </div>
         </motion.div>

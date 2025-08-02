@@ -1,6 +1,6 @@
-# DroneZ Website
+# DronesZ Website
 
-A modern, responsive website for DroneZ - Advanced aerial systems for consumers, defense, and industry.
+A modern, responsive website for DronesZ - Advanced aerial systems for consumers, defense, and industry.
 
 ## Features
 
@@ -40,7 +40,7 @@ Email: {{user_email}}
 Subject: {{subject}}
 Message: {{message}}
 
-This message was sent from the DroneZ website contact form.
+This message was sent from the DronesZ website contact form.
 ```
 
 4. Note down your **Template ID**
@@ -160,7 +160,7 @@ The website uses a modern, dark theme with:
 
 ## License
 
-This project is proprietary to DroneZ.
+This project is proprietary to DronesZ.
 
 ## Support
 

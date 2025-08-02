@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <Link to="/" className="navbar-brand">
-          <span className="brand-text">DroneZ</span>
+          <span className="brand-text">DronesZ</span>
         </Link>
 
         <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>

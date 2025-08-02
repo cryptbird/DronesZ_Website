@@ -144,9 +144,9 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title">About DroneZ</h2>
+            <h2 className="section-title">About DronesZ</h2>
             <p className="brief-text">
-              DroneZ pioneers advanced aerial systems for consumers, defense, and industry. 
+              DronesZ pioneers advanced aerial systems for consumers, defense, and industry. 
               From agile racing drones to tactical counter-drone systems – we engineer every 
               revolution in the air.
             </p>
