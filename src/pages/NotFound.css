@@ -1,0 +1,233 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  padding: 2rem;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Crashed Drone Animation */
+.crashed-drone {
+  position: relative;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.drone-body {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.drone-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #333333, #1a1a1a);
+  border-radius: 50%;
+  border: 2px solid #666666;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.drone-arm {
+  position: absolute;
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(45deg, #666666, #333333);
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform-origin: 2px 30px;
+}
+
+.arm-1 {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.arm-2 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.arm-3 {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.arm-4 {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.crash-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  border-radius: 50%;
+  animation: crashPulse 2s ease-in-out infinite;
+}
+
+@keyframes crashPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+/* Lost Signal Text */
+.lost-signal-text {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ff0000, #ff6666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signal-icon {
+  font-size: 3rem;
+  color: #ff0000;
+  animation: signalBlink 1.5s ease-in-out infinite;
+}
+
+@keyframes signalBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Error Message */
+.error-message {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.navigation-buttons .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Signal Recovery */
+.signal-recovery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #00ff00;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recovery-icon {
+  animation: recoveryPulse 2s ease-in-out infinite;
+}
+
+@keyframes recoveryPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lost-signal-text {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .signal-icon {
+    font-size: 2rem;
+  }
+  
+  .error-message {
+    font-size: 1rem;
+  }
+  
+  .navigation-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .drone-body {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .drone-arm {
+    height: 50px;
+    transform-origin: 2px 25px;
+  }
+  
+  .drone-center {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lost-signal-text {
+    font-size: 1.5rem;
+  }
+  
+  .signal-icon {
+    font-size: 1.5rem;
+  }
+  
+  .drone-body {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .drone-arm {
+    height: 40px;
+    transform-origin: 2px 20px;
+  }
+  
+  .drone-center {
+    width: 25px;
+    height: 25px;
+  }
+} 
